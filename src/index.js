@@ -10,4 +10,4 @@ module.exports = function reverse (n) {
 
     return stringToInt * Math.sign(n);
 }
-}
+
