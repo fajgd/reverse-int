@@ -1,5 +1,4 @@
 module.exports = function reverse (n) {
-  module.exports = function reverse (n) {
     let intToString = int.toString();
 
     let reversedString = intToString
@@ -9,6 +8,6 @@ module.exports = function reverse (n) {
 
     let stringToInt = parseInt(reversedString, 10);
 
-    return stringToInt * Math.sign(int);
+    return stringToInt * Math.sign(n);
 }
 }
