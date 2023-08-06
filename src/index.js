@@ -1,13 +1,10 @@
-module.exports = function reverse (n) {
-    let intToString = int.toString();
+module.exports = function reverse (int) {
+        let intToString = int.toString();
 
-    let reversedString = intToString
-        .split("")
-        .reverse()
-        .join("");
+        let reversedString = [...intToString].reduce((acc, char) => char + acc);
 
-    let stringToInt = parseInt(reversedString, 10);
+        let stringToInt = parseInt(reversedString, 10);
 
-    return stringToInt * Math.sign(n);
+        return stringToInt * Math.sign(int);
 }
 
