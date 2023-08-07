@@ -6,7 +6,7 @@ module.exports = function reverse (num) {
                 .split('')
                 .reverse()
                 .join('')
-        ) * Math.sign( + num)
+        ) *+ Math.sign(num)
     )
 }
 
