@@ -1,14 +1,10 @@
 
-function reverseInt(num) {
-    let reversed = 0;
-    while (num !== 0) {
-        const digit = num % 10;
-        reversed = reversed * 10 + digit;
-        num = Math.floor(n / 10);
-    }
-    return reversed;
+function reverse(number) {
+    const reversedStr = number.toString().split('').reverse().join('');
+    return parseInt(reversedStr);
 }
 
-const number = parseInt(prompt("Введите целое число:"));
-const reversedNumber = reverseInt(number);
-console.log("Перевёрнутое число:", reversedNumber);
+console.log(reverse(123));    // Output: 321
+console.log(reverse(233));    // Output: 332
+console.log(reverse(535));    // Output: 535
+console.log(reverse(95034));  // Output: 43059
