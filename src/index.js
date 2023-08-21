@@ -1,8 +1,8 @@
-function reverse(number) {
+module.exports = function reverse (n) {
                 .split('')
                 .reverse()
                 .join('')
-        ) * Math.sign(num)
-        ) * Math.sign.abs(num)
+        ) * Math.sign(n)
+        ) * Math.sign.abs(n)
     )
 }
