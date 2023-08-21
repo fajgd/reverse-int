@@ -1,11 +1,5 @@
-module.exports = function reverse (num) {
-    return (
-        parseFloat(
-            num
-                .toString()
-                .split('')
-                .reverse()
-                .join('')
-        ) * Math.sign( + num)
-    )
+module.exports = function reverse (number) {
+  const reversedNumber = parseInt(number.toString().split('').reverse().join(''));
+  return reversedNumber;
 }
+
