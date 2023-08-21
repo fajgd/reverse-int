@@ -1,4 +1,13 @@
 function reverse(number) {
-  const reversedString = number.toString().split('').reverse().join('');
-  return parseInt(reversedString);
+  module.exports = function reverse (n) {
+    let intToString = int.toString();
+
+    let reversedString = intToString
+        .split("")
+        .reverse()
+        .join("");
+
+    let stringToInt = parseInt(reversedString, 10);
+
+    return stringToInt * Math.sign(int);
 }
